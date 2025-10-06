@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poojitha Mahesh Shyla - Java Backend Developer</title>
+    <meta name="description" content="Software Engineer with 4+ years of experience in Java backend development, microservices, and scalable system design.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Poojitha Mahesh Shyla</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="particle-background">
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-photo">
+                    <div class="profile-image">
+                        <img src="poojitha_profile.jpg" alt="Poojitha Mahesh Shyla" class="profile-photo" />
+                    </div>
+
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name">Poojitha Mahesh Shyla</h1>
+                    <div class="hero-title">
+                        <span class="typing-prefix">I'm a&nbsp;</span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor"></span>
+                    </div>
+                    <p class="hero-description">
+                        Software Engineer with 4+ years of experience building secure, highly scalable systems using Java and Python. 
+                        Proven in designing REST APIs, microservices, and automated CI/CD pipelines.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn--outline">View My Work</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I am a dedicated software engineer with a passion for building robust, scalable backend systems. 
+                        With expertise in Java ecosystem and modern development practices, I excel at creating solutions 
+                        that enhance digital experiences and optimize performance.
+                    </p>
+                    <div class="about-resume">
+        <a href="PoojithaMaheshShyla.pdf" class="btn btn--primary" target="_blank" rel="noopener">
+            Download Resume
+        </a>
+        <!-- Optional: Inline resume preview (PDF) -->
+        <!--
+        <iframe src="PoojithaMaheshShyla.pdf" width="100%" height="500px" style="border: none; margin-top: 1rem;"></iframe>
+        -->
+    </div>
+                </div>
+                <div class="education-card card">
+                    <div class="card__body">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Master of Science, Computer Science</h4>
+                            <p class="university">Campbellsville University</p>
+                            <p class="period">Jan 2023 - Aug 2024</p>
+                            <div class="gpa">
+                                <span class="status status--success">GPA: 4.0</span>
+                            </div>
+                            <div class="coursework">
+                                <h5>Key Coursework:</h5>
+                                <div class="coursework-tags">
+                                    <span class="tag">Advanced Programming Languages</span>
+                                    <span class="tag">Advanced Database</span>
+                                    <span class="tag">Advanced Operating Systems</span>
+                                    <span class="tag">Artificial Intelligence</span>
+                                    <span class="tag">Software Engineering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card card">
+                            <div class="card__body">
+                                <div class="job-header">
+                                    <h3>Java Backend Developer</h3>
+                                    <span class="company">Walmart</span>
+                                    <span class="period">Apr 2025 - Present</span>
+                                    <span class="location">Sunnyvale, CA</span>
+                                </div>
+                                <ul class="job-highlights">
+                                    <li>Designed and implemented GraphQL schemas, queries, and resolvers, utilizing secure coding practices</li>
+                                    <li>Created and deployed new REST API endpoints in offsite services and BFF layers</li>
+                                    <li>Integrated BFF APIs into internal monitoring tools for mission-critical distributed systems</li>
+                                    <li>Collaborated with cross-functional teams through agile sprints</li>
+                                    <li>Developed backend services using Java, Spring Boot, and GraphQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card card">
+                            <div class="card__body">
+                                <div class="job-header">
+                                    <h3>Full Stack Java Developer</h3>
+                                    <span class="company">Bridgetown Consulting Group</span>
+                                    <span class="period">Oct 2024 - Mar 2025</span>
+                                </div>
+                                <ul class="job-highlights">
+                                    <li>Engineered responsive web interfaces using HTML, CSS, JavaScript, Angular, and React.js</li>
+                                    <li>Developed RESTful APIs with Java and Spring Boot</li>
+                                    <li>Implemented authentication and authorization mechanisms</li>
+                                    <li>Streamlined development with CI/CD tools (Jenkins, GitLab CI)</li>
+                                    <li>Integrated third-party APIs using Node.js and Spring Boot</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card card">
+                            <div class="card__body">
+                                <div class="job-header">
+                                    <h3>Software Engineer</h3>
+                                    <span class="company">DBS</span>
+                                    <span class="period">Mar 2020 - Aug 2022</span>
+                                </div>
+                                <ul class="job-highlights">
+                                    <li>Developed cloud-based banking solutions using Java, Spring Boot, and AWS</li>
+                                    <li>Constructed RESTful APIs for frontend applications using Angular and React.js</li>
+                                    <li>Automated banking workflows reducing manual efforts by 23%</li>
+                                    <li>Enhanced system security with JAAS-based authentication mechanisms</li>
+                                    <li>Optimized database performance, reducing batch job execution times by 30%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card card">
+                            <div class="card__body">
+                                <div class="job-header">
+                                    <h3>Software Intern</h3>
+                                    <span class="company">Capgemini</span>
+                                    <span class="period">Jun 2019 - Mar 2020</span>
+                                </div>
+                                <ul class="job-highlights">
+                                    <li>Led integration testing using Postman and JUnit</li>
+                                    <li>Architected microservices-based e-commerce platform enhancing scalability by 24%</li>
+                                    <li>Integrated Stripe payment gateway supporting 100+ daily transactions</li>
+                                    <li>Established centralized logging with Log4j</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-application">Web Application</button>
+                <button class="filter-btn" data-filter="enterprise-application">Enterprise Application</button>
+                <button class="filter-btn" data-filter="enterprise-solution">Enterprise Solution</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card card" data-category="web-application" data-aos="fade-up">
+                    <div class="card__body">
+                        <div class="project-header">
+                            <h3>Flight Management System</h3>
+                            <div class="project-links">
+                                <span class="tag">Web Application</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Built a comprehensive flight booking system to manage flight schedules, bookings, and cancellations
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular 6</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Java</span>
+                        </div>
+                        <div class="project-highlights">
+                            <ul>
+                                <li>Developed responsive frontend using Angular 6</li>
+                                <li>Implemented robust backend with Spring Boot</li>
+                                <li>Created booking and cancellation management system</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card" data-category="enterprise-application" data-aos="fade-up">
+                    <div class="card__body">
+                        <div class="project-header">
+                            <h3>Microservices E-commerce Platform</h3>
+                            <div class="project-links">
+                                <span class="tag">Enterprise Application</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Architected and implemented a scalable e-commerce platform using microservices architecture
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Stripe API</span>
+                            <span class="tech-tag">Log4j</span>
+                        </div>
+                        <div class="project-highlights">
+                            <ul>
+                                <li>Enhanced system scalability by 24%</li>
+                                <li>Integrated Stripe payment gateway for 100+ daily transactions</li>
+                                <li>Established centralized logging with Log4j</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card" data-category="enterprise-solution" data-aos="fade-up">
+                    <div class="card__body">
+                        <div class="project-header">
+                            <h3>Banking Workflow Automation</h3>
+                            <div class="project-links">
+                                <span class="tag">Enterprise Solution</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Automated critical banking operations to reduce manual efforts and improve efficiency
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kafka</span>
+                        </div>
+                        <div class="project-highlights">
+                            <ul>
+                                <li>Reduced manual efforts by 23%</li>
+                                <li>Optimized batch job execution times by 30%</li>
+                                <li>Implemented Docker containerization</li>
+                                <li>Used Kafka for asynchronous processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category card" data-aos="fade-up">
+                    <div class="card__body">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Golang</span>
+                            <span class="skill-tag">PL/SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category card" data-aos="fade-up">
+                    <div class="card__body">
+                        <h3>Web Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Spring MVC</span>
+                            <span class="skill-tag">Hibernate</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category card" data-aos="fade-up">
+                    <div class="card__body">
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category card" data-aos="fade-up">
+                    <div class="card__body">
+                        <h3>Tools & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">Maven</span>
+                            <span class="skill-tag">Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements">
+                <h3>Key Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card card" data-aos="fade-up">
+                        <div class="card__body">
+                            <div class="achievement-icon">📈</div>
+                            <h4>System Performance Optimization</h4>
+                            <p>Reduced Tivoli Batch Job execution times by 30% through database performance optimization</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card card" data-aos="fade-up">
+                        <div class="card__body">
+                            <div class="achievement-icon">⚡</div>
+                            <h4>Process Automation</h4>
+                            <p>Automated banking workflows reducing manual efforts by 23% in critical operations</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card card" data-aos="fade-up">
+                        <div class="card__body">
+                            <div class="achievement-icon">🚀</div>
+                            <h4>Scalability Enhancement</h4>
+                            <p>Improved e-commerce platform scalability by 24% through microservices architecture</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card card" data-aos="fade-up">
+                        <div class="card__body">
+                            <div class="achievement-icon">🎓</div>
+                            <h4>Academic Excellence</h4>
+                            <p>Maintained 4.0 GPA in Master's program at Campbellsville University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:poojithashetty8@gmail.com">poojithashetty8@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Santa Clara, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/poojitha-mahesh" target="_blank" class="social-link">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/poojitha-mahesh" target="_blank" class="social-link">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2022 Poojitha Mahesh Shyla. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/poojitha-mahesh" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/poojitha-mahesh" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
